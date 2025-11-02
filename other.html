@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding -->
+    <meta charset="utf-8">
+    <!-- Set the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00ff00">
+    <!-- Set title -->
+    <title>Other</title>
+    <!-- Add stylesheet -->
+    <link href="styles/other.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest/manifest.webmanifest">
+  </head>
+  <body>
+    <h1>Other Page</h1>
+    <nav>
+
+      <a href="index.html">Back</a>
+    </nav>
+    <script>
+      window.addEventListener('load', () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js');
+        }
+      });
+    </script>
+    <script src="js/other.js"></script>
+  </body>
+</html>
